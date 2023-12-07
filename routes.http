@@ -1,0 +1,31 @@
+POST http://localhost:3333/livro
+Content-Type: application/json
+
+{
+    "titulo": "Livro: 02",
+    "autor": "Autor: 02",
+    "npaginas": 450
+}
+
+###
+
+GET http://localhost:3333/livro
+
+###
+
+GET http://localhost:3333/livro?search=IFMS
+
+###
+
+PUT http://localhost:3333/livro/d3892910-8af8-4e5c-95f1-b2d5b996e8d4
+Content-Type: application/json
+
+{
+    "titulo": "Livro: IFMS",
+    "autor": "Autor: Vitória",
+    "npaginas": 50
+}
+
+###
+
+DELETE http://localhost:3333/livro/d902fc29-6693-4724-aeb1-07541d7b750f
